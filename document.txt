@@ -1,0 +1,10 @@
+Artificial Intelligence is the simulation of human intelligence by machines.
+Machine Learning is a subset of AI where systems learn from data automatically.
+Deep Learning uses neural networks with many layers to recognize patterns.
+Natural Language Processing allows machines to understand and generate human language.
+Large Language Models like GPT are trained on massive text datasets to generate text.
+RAG stands for Retrieval Augmented Generation. It combines search with LLMs to give accurate answers.
+FAISS is a library by Facebook AI for fast similarity search on vector embeddings.
+Embeddings are numerical representations of text that capture semantic meaning.
+Vector databases store embeddings and allow similarity-based search instead of keyword search.
+Temperature in LLMs controls randomness. Low temperature gives focused answers, high gives creative ones.
