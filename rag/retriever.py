@@ -3,17 +3,16 @@ from core.prompts import RAG_SYSTEM_PROMPT
 from core.config import MODEL_NAME, TEMPERATURE, MAX_TOKENS
 from transformers import pipeline
 from langchain_community.llms import HuggingFacePipeline
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
+import os
 
 def get_llm(temperature=None):
     temp = temperature if temperature is not None else TEMPERATURE
 
-    return Ollama(
+    return OllamaLLM(
         model="llama3",
-        temperature=temp,
-        base_url="http://localhost:11434"  # IMPORTANT
+        base_url=os.getenv("OLLAMA_BASE_URL", "http://host.docker.internal:11434")
     )
-
 def retrieve_context(query: str, k: int = 3) -> str:
     # Load FAISS, find top-k most similar chunks to the query
     vectorstore = load_vectorstore()
