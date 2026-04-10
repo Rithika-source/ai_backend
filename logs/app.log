@@ -2132,3 +2132,862 @@ Rag is a Retrieval Augmented Generation (RAG) system that combines search with L
 2026-04-09 12:51:11.242 | INFO     | api.main:log_requests:28 - → POST /cache/clear
 2026-04-09 12:51:11.246 | INFO     | core.cache:clear_cache:20 - Cache cleared
 2026-04-09 12:51:11.247 | INFO     | api.main:log_requests:31 - ← 200 | 4.98ms
+2026-04-09 17:07:15.699 | INFO     | api.main:log_requests:28 - → GET /
+2026-04-09 17:07:15.700 | INFO     | api.main:log_requests:31 - ← 200 | 0.8ms
+2026-04-09 17:07:19.384 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 17:07:19.385 | INFO     | api.main:log_requests:31 - ← 200 | 0.75ms
+2026-04-09 17:07:19.457 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 17:07:19.464 | INFO     | api.main:log_requests:31 - ← 200 | 6.72ms
+2026-04-09 17:07:19.465 | INFO     | api.main:log_requests:28 - → GET /apple-touch-icon-precomposed.png
+2026-04-09 17:07:19.466 | INFO     | api.main:log_requests:31 - ← 404 | 0.54ms
+2026-04-09 17:07:19.466 | INFO     | api.main:log_requests:28 - → GET /apple-touch-icon.png
+2026-04-09 17:07:19.466 | INFO     | api.main:log_requests:28 - → GET /favicon.ico
+2026-04-09 17:07:19.467 | INFO     | api.main:log_requests:31 - ← 404 | 0.49ms
+2026-04-09 17:07:19.467 | INFO     | api.main:log_requests:31 - ← 404 | 0.55ms
+2026-04-09 17:07:20.067 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 17:07:20.067 | INFO     | api.main:log_requests:31 - ← 200 | 0.59ms
+2026-04-09 17:07:20.142 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 17:07:20.142 | INFO     | api.main:log_requests:31 - ← 200 | 0.41ms
+2026-04-09 17:07:52.141 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:07:52.143 | INFO     | api.routes:ask:42 - /ask | question: what is machine learning?
+2026-04-09 17:07:52.145 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is machine learning?'
+2026-04-09 17:08:03.019 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is machine learning?'
+2026-04-09 17:08:03.021 | INFO     | api.main:log_requests:31 - ← 200 | 10879.69ms
+2026-04-09 17:10:05.752 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:10:05.754 | INFO     | api.routes:ask:42 - /ask | question: what is machine learning?
+2026-04-09 17:10:05.754 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is machine learning?'
+2026-04-09 17:10:05.755 | INFO     | api.routes:ask:47 - /ask | returning cached answer
+2026-04-09 17:10:05.755 | INFO     | api.main:log_requests:31 - ← 200 | 3.63ms
+2026-04-09 17:10:57.575 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:10:57.578 | INFO     | api.routes:ask:42 - /ask | question: what is machine learning?
+2026-04-09 17:10:57.579 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is machine learning?'
+2026-04-09 17:10:57.579 | INFO     | api.routes:ask:47 - /ask | returning cached answer
+2026-04-09 17:10:57.579 | INFO     | api.main:log_requests:31 - ← 200 | 4.61ms
+2026-04-09 17:12:31.291 | INFO     | api.main:log_requests:28 - → POST /api/v1/agent
+2026-04-09 17:12:31.293 | INFO     | api.routes:agent_ask:95 - /agent | question: what is the sum of 2 and 20?
+2026-04-09 17:12:31.293 | INFO     | agents.agent:run_agent:87 - Agent received: what is the sum of 2 and 20?
+2026-04-09 17:12:31.293 | INFO     | agents.agent:run_agent:106 - Agent picked: Calculator
+2026-04-09 17:12:31.293 | INFO     | agents.agent:parse_math:83 - Parsed math expression: '2 + 20'
+2026-04-09 17:12:31.293 | INFO     | agents.agent:run_agent:117 - Agent result: The answer is 22
+2026-04-09 17:12:31.293 | INFO     | api.main:log_requests:31 - ← 200 | 2.96ms
+2026-04-09 17:23:50.308 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 17:23:50.314 | INFO     | api.main:log_requests:31 - ← 200 | 6.46ms
+2026-04-09 17:49:30.852 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:49:30.855 | INFO     | api.routes:ask:44 - /ask | question: what is machine learning?
+2026-04-09 17:49:30.856 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is machine learning?'
+2026-04-09 17:49:30.856 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:49:30.857 | INFO     | api.main:log_requests:31 - ← 200 | 4.25ms
+2026-04-09 17:49:49.362 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 17:49:49.363 | INFO     | api.main:log_requests:31 - ← 200 | 0.87ms
+2026-04-09 17:49:49.440 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 17:49:49.447 | INFO     | api.main:log_requests:31 - ← 200 | 7.18ms
+2026-04-09 17:49:52.117 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 17:49:52.118 | INFO     | api.main:log_requests:31 - ← 200 | 0.83ms
+2026-04-09 17:49:52.156 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 17:49:52.157 | INFO     | api.main:log_requests:31 - ← 200 | 0.5ms
+2026-04-09 17:49:53.998 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 17:49:53.999 | INFO     | api.main:log_requests:31 - ← 200 | 0.86ms
+2026-04-09 17:49:54.026 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 17:49:54.026 | INFO     | api.main:log_requests:31 - ← 200 | 0.45ms
+2026-04-09 17:50:12.415 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:50:12.416 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-09 17:50:12.416 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is rag?'
+2026-04-09 17:50:22.780 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 484b8b53
+  query         : what is rag?
+  retrieval_time: 0.0s
+  llm_time      : 10.363s
+  total_time    : 10.363s
+  est. tokens   : 21
+2026-04-09 17:50:22.781 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is rag?'
+2026-04-09 17:50:22.781 | INFO     | api.main:log_requests:31 - ← 200 | 10365.72ms
+2026-04-09 17:51:11.110 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:51:11.111 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-09 17:51:11.111 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is rag?'
+2026-04-09 17:51:11.111 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:51:11.111 | INFO     | api.main:log_requests:31 - ← 200 | 1.56ms
+2026-04-09 17:53:56.869 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:53:56.871 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-09 17:53:56.871 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is rag?'
+2026-04-09 17:53:56.871 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:53:56.872 | INFO     | api.main:log_requests:31 - ← 200 | 2.93ms
+2026-04-09 17:53:59.408 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:53:59.410 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-09 17:53:59.410 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is rag?'
+2026-04-09 17:53:59.410 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:53:59.410 | INFO     | api.main:log_requests:31 - ← 200 | 1.93ms
+2026-04-09 17:54:13.529 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:54:13.530 | INFO     | api.routes:ask:44 - /ask | question: what is fairs?
+2026-04-09 17:54:13.530 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is fairs?'
+2026-04-09 17:54:19.919 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : bc058e2b
+  query         : what is fairs?
+  retrieval_time: 0.0s
+  llm_time      : 6.388s
+  total_time    : 6.388s
+  est. tokens   : 45
+2026-04-09 17:54:19.920 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is fairs?'
+2026-04-09 17:54:19.921 | INFO     | api.main:log_requests:31 - ← 200 | 6392.03ms
+2026-04-09 17:54:29.132 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:54:29.135 | INFO     | api.routes:ask:44 - /ask | question: what is faiss?
+2026-04-09 17:54:29.135 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is faiss?'
+2026-04-09 17:54:34.526 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 6b2c8008
+  query         : what is faiss?
+  retrieval_time: 0.0s
+  llm_time      : 5.391s
+  total_time    : 5.391s
+  est. tokens   : 26
+2026-04-09 17:54:34.527 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is faiss?'
+2026-04-09 17:54:34.528 | INFO     | api.main:log_requests:31 - ← 200 | 5396.07ms
+2026-04-09 17:54:39.038 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:54:39.039 | INFO     | api.routes:ask:44 - /ask | question: what is faiss?
+2026-04-09 17:54:39.039 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is faiss?'
+2026-04-09 17:54:39.039 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:54:39.040 | INFO     | api.main:log_requests:31 - ← 200 | 1.81ms
+2026-04-09 17:55:02.483 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:55:02.485 | INFO     | api.routes:ask:44 - /ask | question: what is Vector databases?
+2026-04-09 17:55:02.485 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is Vector databases?'
+2026-04-09 17:55:07.341 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : d222ea1f
+  query         : what is Vector databases?
+  retrieval_time: 0.0s
+  llm_time      : 4.856s
+  total_time    : 4.856s
+  est. tokens   : 33
+2026-04-09 17:55:07.342 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is Vector databases?'
+2026-04-09 17:55:07.342 | INFO     | api.main:log_requests:31 - ← 200 | 4859.13ms
+2026-04-09 17:55:13.150 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:55:13.152 | INFO     | api.routes:ask:44 - /ask | question: what is Vector databases?
+2026-04-09 17:55:13.152 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is Vector databases?'
+2026-04-09 17:55:13.152 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:55:13.153 | INFO     | api.main:log_requests:31 - ← 200 | 2.42ms
+2026-04-09 17:55:28.792 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:55:28.794 | INFO     | api.routes:ask:44 - /ask | question: what is Embeddings?
+2026-04-09 17:55:28.795 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is Embeddings?'
+2026-04-09 17:55:33.501 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : f8cc6d68
+  query         : what is Embeddings?
+  retrieval_time: 0.0s
+  llm_time      : 4.706s
+  total_time    : 4.706s
+  est. tokens   : 24
+2026-04-09 17:55:33.502 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is Embeddings?'
+2026-04-09 17:55:33.502 | INFO     | api.main:log_requests:31 - ← 200 | 4709.92ms
+2026-04-09 17:56:30.482 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:56:30.484 | INFO     | api.routes:ask:44 - /ask | question: what is Deep Learning?
+2026-04-09 17:56:30.485 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is Deep Learning?'
+2026-04-09 17:56:37.936 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : b4be3d9e
+  query         : what is Deep Learning?
+  retrieval_time: 0.0s
+  llm_time      : 7.45s
+  total_time    : 7.45s
+  est. tokens   : 24
+2026-04-09 17:56:37.937 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is Deep Learning?'
+2026-04-09 17:56:37.937 | INFO     | api.main:log_requests:31 - ← 200 | 7455.12ms
+2026-04-09 17:56:41.878 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:56:41.879 | INFO     | api.routes:ask:44 - /ask | question: what is Deep Learning?
+2026-04-09 17:56:41.880 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is Deep Learning?'
+2026-04-09 17:56:41.880 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:56:41.880 | INFO     | api.main:log_requests:31 - ← 200 | 2.25ms
+2026-04-09 17:56:52.574 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:56:52.575 | INFO     | api.routes:ask:44 - /ask | question: what is Deep Learning?
+2026-04-09 17:56:52.575 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is Deep Learning?'
+2026-04-09 17:56:52.575 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:56:52.576 | INFO     | api.main:log_requests:31 - ← 200 | 1.6ms
+2026-04-09 17:57:18.200 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:57:18.203 | INFO     | api.routes:ask:44 - /ask | question: what is TEMPERATURE?
+2026-04-09 17:57:18.203 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is TEMPERATURE?'
+2026-04-09 17:57:24.053 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : bed3018e
+  query         : what is TEMPERATURE?
+  retrieval_time: 0.0s
+  llm_time      : 5.85s
+  total_time    : 5.85s
+  est. tokens   : 49
+2026-04-09 17:57:24.053 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is TEMPERATURE?'
+2026-04-09 17:57:24.053 | INFO     | api.main:log_requests:31 - ← 200 | 5853.06ms
+2026-04-09 17:57:27.855 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:57:27.857 | INFO     | api.routes:ask:44 - /ask | question: what is TEMPERATURE?
+2026-04-09 17:57:27.857 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is TEMPERATURE?'
+2026-04-09 17:57:27.858 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:57:27.858 | INFO     | api.main:log_requests:31 - ← 200 | 2.96ms
+2026-04-09 17:59:35.767 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 17:59:35.769 | INFO     | api.routes:ask:44 - /ask | question: what is TEMPERATURE?
+2026-04-09 17:59:35.769 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is TEMPERATURE?'
+2026-04-09 17:59:35.770 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 17:59:35.770 | INFO     | api.main:log_requests:31 - ← 200 | 2.79ms
+2026-04-09 18:51:38.081 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 18:51:38.084 | INFO     | api.routes:ask:44 - /ask | question: what is TEMPERATURE?
+2026-04-09 18:51:38.085 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is TEMPERATURE?'
+2026-04-09 18:51:38.085 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 18:51:38.086 | INFO     | api.main:log_requests:31 - ← 200 | 4.64ms
+2026-04-09 18:52:28.329 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 18:52:28.330 | INFO     | api.main:log_requests:31 - ← 200 | 0.97ms
+2026-04-09 18:52:28.402 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 18:52:28.410 | INFO     | api.main:log_requests:31 - ← 200 | 7.07ms
+2026-04-09 18:52:40.319 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 18:52:40.321 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-09 18:52:40.322 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is rag?'
+2026-04-09 18:52:44.996 | ERROR    | api.routes:ask:65 - /ask | failed: 1 validation error for OllamaLLM
+base_url
+  Input should be a valid string [type=string_type, input_value=('OLLAMA_BASE_URL', 'http....docker.internal:11434'), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-04-09 18:52:44.997 | INFO     | api.main:log_requests:31 - ← 500 | 4677.32ms
+2026-04-09 18:54:10.566 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 18:54:10.568 | INFO     | api.main:log_requests:31 - ← 200 | 1.18ms
+2026-04-09 18:54:10.592 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 18:54:10.601 | INFO     | api.main:log_requests:31 - ← 200 | 9.23ms
+2026-04-09 18:54:24.537 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 18:54:24.540 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-09 18:54:24.540 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is rag?'
+2026-04-09 18:54:35.203 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 151eff6c
+  query         : what is rag?
+  retrieval_time: 0.0s
+  llm_time      : 10.662s
+  total_time    : 10.662s
+  est. tokens   : 34
+2026-04-09 18:54:35.203 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is rag?'
+2026-04-09 18:54:35.204 | INFO     | api.main:log_requests:31 - ← 200 | 10667.05ms
+2026-04-09 19:35:22.837 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 19:35:22.839 | INFO     | api.main:log_requests:31 - ← 200 | 2.25ms
+2026-04-09 19:35:22.874 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 19:35:22.880 | INFO     | api.main:log_requests:31 - ← 200 | 7.0ms
+2026-04-09 19:35:43.137 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:35:43.138 | INFO     | api.routes:ask:44 - /ask | question: what happened in 1950?
+2026-04-09 19:35:43.139 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what happened in 1950?'
+2026-04-09 19:35:55.333 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : d1efdf4d
+  query         : what happened in 1950?
+  retrieval_time: 0.0s
+  llm_time      : 12.193s
+  total_time    : 12.193s
+  est. tokens   : 67
+2026-04-09 19:35:55.335 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what happened in 1950?'
+2026-04-09 19:35:55.335 | INFO     | api.main:log_requests:31 - ← 200 | 12198.78ms
+2026-04-09 19:37:27.241 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:37:27.244 | INFO     | api.routes:ask:44 - /ask | question: what happened in 1950?
+2026-04-09 19:37:27.244 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what happened in 1950?'
+2026-04-09 19:37:27.245 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 19:37:27.245 | INFO     | api.main:log_requests:31 - ← 200 | 4.14ms
+2026-04-09 19:37:34.331 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 19:37:34.331 | INFO     | api.main:log_requests:31 - ← 200 | 0.54ms
+2026-04-09 19:37:34.357 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 19:37:34.358 | INFO     | api.main:log_requests:31 - ← 200 | 0.59ms
+2026-04-09 19:38:01.459 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 19:38:01.460 | INFO     | api.main:log_requests:31 - ← 200 | 0.85ms
+2026-04-09 19:38:01.484 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 19:38:01.492 | INFO     | api.main:log_requests:31 - ← 200 | 8.06ms
+2026-04-09 19:38:20.496 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:38:20.499 | INFO     | api.routes:ask:44 - /ask | question: what happened in 1950?
+2026-04-09 19:38:20.500 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what happened in 1950?'
+2026-04-09 19:38:20.500 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 19:38:20.500 | INFO     | api.main:log_requests:31 - ← 200 | 3.9ms
+2026-04-09 19:45:30.945 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 19:45:30.945 | INFO     | api.main:log_requests:31 - ← 200 | 0.42ms
+2026-04-09 19:45:31.038 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 19:45:31.043 | INFO     | api.main:log_requests:31 - ← 200 | 5.58ms
+2026-04-09 19:45:37.446 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-09 19:45:37.446 | INFO     | api.main:log_requests:31 - ← 200 | 0.52ms
+2026-04-09 19:45:37.472 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-09 19:45:37.473 | INFO     | api.main:log_requests:31 - ← 200 | 0.59ms
+2026-04-09 19:45:52.289 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:45:52.291 | INFO     | api.routes:ask:44 - /ask | question: what happened in 1950?
+2026-04-09 19:45:52.292 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what happened in 1950?'
+2026-04-09 19:45:52.292 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 19:45:52.292 | INFO     | api.main:log_requests:31 - ← 200 | 3.23ms
+2026-04-09 19:46:00.766 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:46:00.767 | INFO     | api.routes:ask:44 - /ask | question: what happened in 1950?
+2026-04-09 19:46:00.768 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what happened in 1950?'
+2026-04-09 19:46:00.768 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 19:46:00.768 | INFO     | api.main:log_requests:31 - ← 200 | 1.75ms
+2026-04-09 19:53:14.878 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:53:14.881 | INFO     | api.routes:ask:44 - /ask | question: what happened in 1950?
+2026-04-09 19:53:14.882 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what happened in 1950?'
+2026-04-09 19:53:14.883 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 19:53:14.883 | INFO     | api.main:log_requests:31 - ← 200 | 4.8ms
+2026-04-09 19:53:17.721 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:53:17.722 | INFO     | api.routes:ask:44 - /ask | question: what happened in 1950?
+2026-04-09 19:53:17.722 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what happened in 1950?'
+2026-04-09 19:53:17.722 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-09 19:53:17.723 | INFO     | api.main:log_requests:31 - ← 200 | 1.51ms
+2026-04-09 19:53:30.271 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:53:30.272 | INFO     | api.routes:ask:44 - /ask | question: what is ml?
+2026-04-09 19:53:30.272 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ml?'
+2026-04-09 19:53:40.502 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 01849d88
+  query         : what is ml?
+  retrieval_time: 0.0s
+  llm_time      : 10.229s
+  total_time    : 10.229s
+  est. tokens   : 22
+2026-04-09 19:53:40.503 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ml?'
+2026-04-09 19:53:40.503 | INFO     | api.main:log_requests:31 - ← 200 | 10231.96ms
+2026-04-09 19:54:03.665 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-09 19:54:03.666 | INFO     | api.routes:ask:44 - /ask | question: what is Attention?
+2026-04-09 19:54:03.667 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is Attention?'
+2026-04-09 19:54:10.218 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 497f4be9
+  query         : what is Attention?
+  retrieval_time: 0.0s
+  llm_time      : 6.551s
+  total_time    : 6.551s
+  est. tokens   : 26
+2026-04-09 19:54:10.218 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is Attention?'
+2026-04-09 19:54:10.218 | INFO     | api.main:log_requests:31 - ← 200 | 6553.73ms
+2026-04-10 11:59:52.127 | INFO     | api.main:log_requests:28 - → GET /
+2026-04-10 11:59:52.128 | INFO     | api.main:log_requests:31 - ← 200 | 1.35ms
+2026-04-10 11:59:55.908 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-10 11:59:55.909 | INFO     | api.main:log_requests:31 - ← 200 | 0.82ms
+2026-04-10 11:59:55.981 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-10 11:59:55.988 | INFO     | api.main:log_requests:31 - ← 200 | 7.57ms
+2026-04-10 12:01:20.647 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 12:01:20.649 | INFO     | api.routes:ask:44 - /ask | question: what is Recurrent Neural Networks?
+2026-04-10 12:01:20.650 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is Recurrent Neural Networks?'
+2026-04-10 12:01:31.836 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : e060aabb
+  query         : what is Recurrent Neural Networks?
+  retrieval_time: 0.0s
+  llm_time      : 11.186s
+  total_time    : 11.186s
+  est. tokens   : 35
+2026-04-10 12:01:31.837 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is Recurrent Neural Networks?'
+2026-04-10 12:01:31.837 | INFO     | api.main:log_requests:31 - ← 200 | 11190.56ms
+2026-04-10 12:04:37.543 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 12:04:37.545 | INFO     | api.routes:ask:44 - /ask | question: what is Recurrent Neural Networks?
+2026-04-10 12:04:37.546 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is Recurrent Neural Networks?'
+2026-04-10 12:04:37.547 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 12:04:37.547 | INFO     | api.main:log_requests:31 - ← 200 | 4.28ms
+2026-04-10 12:05:20.172 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 12:05:20.173 | INFO     | api.routes:ask:44 - /ask | question: what is attention?
+2026-04-10 12:05:20.174 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is attention?'
+2026-04-10 12:05:29.860 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 50b2884c
+  query         : what is attention?
+  retrieval_time: 0.0s
+  llm_time      : 9.686s
+  total_time    : 9.686s
+  est. tokens   : 59
+2026-04-10 12:05:29.860 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is attention?'
+2026-04-10 12:05:29.861 | INFO     | api.main:log_requests:31 - ← 200 | 9688.77ms
+2026-04-10 12:46:20.181 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 12:46:20.182 | INFO     | api.routes:ask:44 - /ask | question: what is attention?
+2026-04-10 12:46:20.183 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is attention?'
+2026-04-10 12:46:20.183 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 12:46:20.183 | INFO     | api.main:log_requests:31 - ← 200 | 2.62ms
+2026-04-10 12:46:22.195 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 12:46:22.195 | INFO     | api.routes:ask:44 - /ask | question: what is attention?
+2026-04-10 12:46:22.196 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is attention?'
+2026-04-10 12:46:22.196 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 12:46:22.196 | INFO     | api.main:log_requests:31 - ← 200 | 1.39ms
+2026-04-10 12:58:57.134 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 12:58:57.136 | INFO     | api.routes:ask:44 - /ask | question: what is attention?
+2026-04-10 12:58:57.138 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is attention?'
+2026-04-10 12:58:57.138 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 12:58:57.138 | INFO     | api.main:log_requests:31 - ← 200 | 4.16ms
+2026-04-10 13:00:12.969 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:00:12.970 | INFO     | api.routes:ask:44 - /ask | question: what is attention?
+2026-04-10 13:00:12.970 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is attention?'
+2026-04-10 13:00:12.970 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:00:12.970 | INFO     | api.main:log_requests:31 - ← 200 | 1.32ms
+2026-04-10 13:00:25.667 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:00:25.668 | INFO     | api.routes:ask:44 - /ask | question: what is self-attention?
+2026-04-10 13:00:25.668 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is self-attention?'
+2026-04-10 13:00:25.668 | ERROR    | api.routes:ask:65 - /ask | failed: cannot access local variable 'vectorstore' where it is not associated with a value
+2026-04-10 13:00:25.669 | INFO     | api.main:log_requests:31 - ← 500 | 1.48ms
+2026-04-10 13:00:43.783 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:00:43.784 | INFO     | api.routes:ask:44 - /ask | question: what is self-attention?
+2026-04-10 13:00:43.784 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is self-attention?'
+2026-04-10 13:00:54.015 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 9c0fdade
+  query         : what is self-attention?
+  retrieval_time: 0.0s
+  llm_time      : 10.23s
+  total_time    : 10.23s
+  est. tokens   : 14
+2026-04-10 13:00:54.015 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is self-attention?'
+2026-04-10 13:00:54.016 | INFO     | api.main:log_requests:31 - ← 200 | 10232.65ms
+2026-04-10 13:01:07.053 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:01:07.055 | INFO     | api.routes:ask:44 - /ask | question: what is faiss?
+2026-04-10 13:01:07.055 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is faiss?'
+2026-04-10 13:01:13.229 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 8d0f9a1d
+  query         : what is faiss?
+  retrieval_time: 0.0s
+  llm_time      : 6.173s
+  total_time    : 6.173s
+  est. tokens   : 26
+2026-04-10 13:01:13.229 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is faiss?'
+2026-04-10 13:01:13.229 | INFO     | api.main:log_requests:31 - ← 200 | 6176.18ms
+2026-04-10 13:27:11.973 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:27:11.975 | INFO     | api.routes:ask:44 - /ask | question: what is self-attention?
+2026-04-10 13:27:11.976 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is self-attention?'
+2026-04-10 13:27:11.976 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:27:11.977 | INFO     | api.main:log_requests:31 - ← 200 | 3.58ms
+2026-04-10 13:42:36.286 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:42:36.289 | INFO     | api.routes:ask:44 - /ask | question: what is self-attention?
+2026-04-10 13:42:36.290 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is self-attention?'
+2026-04-10 13:42:36.290 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:42:36.290 | INFO     | api.main:log_requests:31 - ← 200 | 4.64ms
+2026-04-10 13:42:40.069 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:42:40.070 | INFO     | api.routes:ask:44 - /ask | question: what is self-attention?
+2026-04-10 13:42:40.071 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is self-attention?'
+2026-04-10 13:42:40.071 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:42:40.071 | INFO     | api.main:log_requests:31 - ← 200 | 2.59ms
+2026-04-10 13:43:22.002 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:43:22.003 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-10 13:43:22.003 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is rag?'
+2026-04-10 13:43:32.616 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 232838fe
+  query         : what is rag?
+  retrieval_time: 0.0s
+  llm_time      : 10.613s
+  total_time    : 10.613s
+  est. tokens   : 11
+2026-04-10 13:43:32.618 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is rag?'
+2026-04-10 13:43:32.618 | INFO     | api.main:log_requests:31 - ← 200 | 10616.18ms
+2026-04-10 13:44:21.327 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:44:21.328 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-10 13:44:21.328 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is rag?'
+2026-04-10 13:44:21.328 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:44:21.328 | INFO     | api.main:log_requests:31 - ← 200 | 1.5ms
+2026-04-10 13:44:26.794 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-10 13:44:26.795 | INFO     | api.main:log_requests:31 - ← 200 | 0.43ms
+2026-04-10 13:44:26.846 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-10 13:44:26.852 | INFO     | api.main:log_requests:31 - ← 200 | 5.72ms
+2026-04-10 13:44:35.659 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:44:35.660 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-10 13:44:35.661 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is rag?'
+2026-04-10 13:44:35.661 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:44:35.662 | INFO     | api.main:log_requests:31 - ← 200 | 2.24ms
+2026-04-10 13:44:52.467 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:44:52.468 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-10 13:44:52.468 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is rag?'
+2026-04-10 13:44:52.469 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:44:52.469 | INFO     | api.main:log_requests:31 - ← 200 | 2.16ms
+2026-04-10 13:44:57.245 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:44:57.246 | INFO     | api.routes:ask:44 - /ask | question: what is ml?
+2026-04-10 13:44:57.246 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ml?'
+2026-04-10 13:45:05.869 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : f45b616c
+  query         : what is ml?
+  retrieval_time: 0.0s
+  llm_time      : 8.622s
+  total_time    : 8.622s
+  est. tokens   : 11
+2026-04-10 13:45:05.869 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ml?'
+2026-04-10 13:45:05.870 | INFO     | api.main:log_requests:31 - ← 200 | 8624.95ms
+2026-04-10 13:45:59.014 | INFO     | api.main:log_requests:28 - → POST /api/v1/debug-rag
+2026-04-10 13:45:59.016 | INFO     | api.routes:debug_rag:113 - /debug-rag | question: what is ml
+2026-04-10 13:46:04.125 | INFO     | api.routes:debug_rag:134 - /debug-rag | 3 chunks retrieved
+2026-04-10 13:46:04.126 | INFO     | api.main:log_requests:31 - ← 200 | 5112.13ms
+2026-04-10 13:46:29.635 | INFO     | api.main:log_requests:28 - → POST /api/v1/chat
+2026-04-10 13:46:29.638 | INFO     | api.routes:chat:74 - /chat | session: 3 | message: what is ml?
+2026-04-10 13:46:35.118 | INFO     | api.routes:chat:76 - /chat | session: 3 | response ready
+2026-04-10 13:46:35.118 | INFO     | api.main:log_requests:31 - ← 200 | 5482.89ms
+2026-04-10 13:51:31.080 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:51:31.081 | INFO     | api.routes:ask:44 - /ask | question: what is ml?
+2026-04-10 13:51:31.082 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is ml?'
+2026-04-10 13:51:31.082 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:51:31.082 | INFO     | api.main:log_requests:31 - ← 200 | 2.72ms
+2026-04-10 13:51:38.897 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:51:38.899 | INFO     | api.routes:ask:44 - /ask | question: what is ai?
+2026-04-10 13:51:38.899 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ai?'
+2026-04-10 13:51:50.146 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 8f3b3cce
+  query         : what is ai?
+  retrieval_time: 0.0s
+  llm_time      : 11.247s
+  total_time    : 11.247s
+  est. tokens   : 60
+2026-04-10 13:51:50.148 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ai?'
+2026-04-10 13:51:50.150 | INFO     | api.main:log_requests:31 - ← 200 | 11252.43ms
+2026-04-10 13:52:13.128 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:52:13.130 | INFO     | api.routes:ask:44 - /ask | question: what is ai?
+2026-04-10 13:52:13.131 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is ai?'
+2026-04-10 13:52:13.131 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 13:52:13.132 | INFO     | api.main:log_requests:31 - ← 200 | 3.42ms
+2026-04-10 13:59:08.849 | INFO     | api.main:log_requests:28 - → POST /api/v1/cache/clear
+2026-04-10 13:59:08.852 | INFO     | core.cache:clear_cache:20 - Cache cleared
+2026-04-10 13:59:08.853 | INFO     | api.main:log_requests:31 - ← 200 | 4.0ms
+2026-04-10 13:59:11.067 | INFO     | api.main:log_requests:28 - → POST /api/v1/cache/clear
+2026-04-10 13:59:11.067 | INFO     | core.cache:clear_cache:20 - Cache cleared
+2026-04-10 13:59:11.068 | INFO     | api.main:log_requests:31 - ← 200 | 0.94ms
+2026-04-10 13:59:19.770 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 13:59:19.771 | INFO     | api.routes:ask:44 - /ask | question: what is ai?
+2026-04-10 13:59:19.771 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ai?'
+2026-04-10 13:59:30.983 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 3d4a457b
+  query         : what is ai?
+  retrieval_time: 0.0s
+  llm_time      : 11.211s
+  total_time    : 11.211s
+  est. tokens   : 42
+2026-04-10 13:59:30.983 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ai?'
+2026-04-10 13:59:30.983 | INFO     | api.main:log_requests:31 - ← 200 | 11213.35ms
+2026-04-10 14:13:44.870 | INFO     | api.main:log_requests:28 - → POST /api/v1/cache/clear
+2026-04-10 14:13:44.874 | INFO     | core.cache:clear_cache:20 - Cache cleared
+2026-04-10 14:13:44.875 | INFO     | api.main:log_requests:31 - ← 200 | 5.11ms
+2026-04-10 14:14:11.148 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:14:11.151 | INFO     | api.routes:ask:44 - /ask | question: Who introduced the Turing Test?
+2026-04-10 14:14:11.152 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'Who introduced the Turing Test?'
+2026-04-10 14:14:16.831 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 06a7aa21
+  query         : Who introduced the Turing Test?
+  retrieval_time: 0.0s
+  llm_time      : 5.679s
+  total_time    : 5.679s
+  est. tokens   : 34
+2026-04-10 14:14:16.832 | INFO     | core.cache:set_cache:16 - Cache SET for: 'Who introduced the Turing Test?'
+2026-04-10 14:14:16.832 | INFO     | api.main:log_requests:31 - ← 200 | 5683.68ms
+2026-04-10 14:14:36.625 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:14:36.626 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-10 14:14:36.626 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is rag?'
+2026-04-10 14:14:42.773 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : eae6f1a8
+  query         : what is rag?
+  retrieval_time: 0.0s
+  llm_time      : 6.146s
+  total_time    : 6.146s
+  est. tokens   : 11
+2026-04-10 14:14:42.773 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is rag?'
+2026-04-10 14:14:42.774 | INFO     | api.main:log_requests:31 - ← 200 | 6148.8ms
+2026-04-10 14:15:28.578 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:15:28.580 | INFO     | api.routes:ask:44 - /ask | question: what is ml?
+2026-04-10 14:15:28.580 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ml?'
+2026-04-10 14:15:34.258 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 2cd976c7
+  query         : what is ml?
+  retrieval_time: 0.0s
+  llm_time      : 5.678s
+  total_time    : 5.678s
+  est. tokens   : 11
+2026-04-10 14:15:34.259 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ml?'
+2026-04-10 14:15:34.260 | INFO     | api.main:log_requests:31 - ← 200 | 5681.83ms
+2026-04-10 14:17:23.486 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:17:23.488 | INFO     | api.routes:ask:44 - /ask | question: What is AlexNet?
+2026-04-10 14:17:23.488 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'What is AlexNet?'
+2026-04-10 14:17:29.819 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 49374447
+  query         : What is AlexNet?
+  retrieval_time: 0.0s
+  llm_time      : 6.331s
+  total_time    : 6.331s
+  est. tokens   : 25
+2026-04-10 14:17:29.820 | INFO     | core.cache:set_cache:16 - Cache SET for: 'What is AlexNet?'
+2026-04-10 14:17:29.820 | INFO     | api.main:log_requests:31 - ← 200 | 6333.93ms
+2026-04-10 14:18:27.326 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:18:27.327 | INFO     | api.routes:ask:44 - /ask | question: What is ai?
+2026-04-10 14:18:27.328 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'What is ai?'
+2026-04-10 14:18:34.458 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : a366008a
+  query         : What is ai?
+  retrieval_time: 0.0s
+  llm_time      : 7.13s
+  total_time    : 7.13s
+  est. tokens   : 43
+2026-04-10 14:18:34.459 | INFO     | core.cache:set_cache:16 - Cache SET for: 'What is ai?'
+2026-04-10 14:18:34.459 | INFO     | api.main:log_requests:31 - ← 200 | 7133.26ms
+2026-04-10 14:18:46.642 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:18:46.643 | INFO     | api.routes:ask:44 - /ask | question: What is ml?
+2026-04-10 14:18:46.643 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'What is ml?'
+2026-04-10 14:18:52.316 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : aa54496f
+  query         : What is ml?
+  retrieval_time: 0.0s
+  llm_time      : 5.673s
+  total_time    : 5.673s
+  est. tokens   : 11
+2026-04-10 14:18:52.316 | INFO     | core.cache:set_cache:16 - Cache SET for: 'What is ml?'
+2026-04-10 14:18:52.316 | INFO     | api.main:log_requests:31 - ← 200 | 5674.66ms
+2026-04-10 14:19:45.298 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:19:45.300 | INFO     | api.routes:ask:44 - /ask | question: What is ml?
+2026-04-10 14:19:45.301 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'What is ml?'
+2026-04-10 14:19:45.301 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 14:19:45.302 | INFO     | api.main:log_requests:31 - ← 200 | 4.54ms
+2026-04-10 14:19:55.094 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-10 14:19:55.095 | INFO     | api.main:log_requests:31 - ← 200 | 0.47ms
+2026-04-10 14:19:55.137 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-10 14:19:55.145 | INFO     | api.main:log_requests:31 - ← 200 | 7.07ms
+2026-04-10 14:20:03.357 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-10 14:20:03.358 | INFO     | api.main:log_requests:31 - ← 200 | 0.84ms
+2026-04-10 14:20:03.386 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-10 14:20:03.386 | INFO     | api.main:log_requests:31 - ← 200 | 0.45ms
+2026-04-10 14:20:20.184 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:20:20.186 | INFO     | api.routes:ask:44 - /ask | question: what is ml?
+2026-04-10 14:20:20.186 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is ml?'
+2026-04-10 14:20:20.186 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 14:20:20.187 | INFO     | api.main:log_requests:31 - ← 200 | 2.6ms
+2026-04-10 14:20:32.464 | INFO     | api.main:log_requests:28 - → POST /api/v1/cache/clear
+2026-04-10 14:20:32.466 | INFO     | core.cache:clear_cache:20 - Cache cleared
+2026-04-10 14:20:32.466 | INFO     | api.main:log_requests:31 - ← 200 | 1.55ms
+2026-04-10 14:20:38.117 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:20:38.118 | INFO     | api.routes:ask:44 - /ask | question: what is ml?
+2026-04-10 14:20:38.118 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ml?'
+2026-04-10 14:20:45.530 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 952dda7f
+  query         : what is ml?
+  retrieval_time: 0.0s
+  llm_time      : 7.411s
+  total_time    : 7.411s
+  est. tokens   : 11
+2026-04-10 14:20:45.530 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ml?'
+2026-04-10 14:20:45.530 | INFO     | api.main:log_requests:31 - ← 200 | 7413.83ms
+2026-04-10 14:21:01.382 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:21:01.382 | INFO     | api.routes:ask:44 - /ask | question: what is got?
+2026-04-10 14:21:01.382 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is got?'
+2026-04-10 14:21:08.627 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 5e135134
+  query         : what is got?
+  retrieval_time: 0.0s
+  llm_time      : 7.244s
+  total_time    : 7.244s
+  est. tokens   : 58
+2026-04-10 14:21:08.628 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is got?'
+2026-04-10 14:21:08.628 | INFO     | api.main:log_requests:31 - ← 200 | 7246.35ms
+2026-04-10 14:21:30.448 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:21:30.449 | INFO     | api.routes:ask:44 - /ask | question: what is gpt?
+2026-04-10 14:21:30.450 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is gpt?'
+2026-04-10 14:21:36.505 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 16f534cb
+  query         : what is gpt?
+  retrieval_time: 0.0s
+  llm_time      : 6.055s
+  total_time    : 6.055s
+  est. tokens   : 22
+2026-04-10 14:21:36.505 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is gpt?'
+2026-04-10 14:21:36.505 | INFO     | api.main:log_requests:31 - ← 200 | 6057.3ms
+2026-04-10 14:21:51.666 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:21:51.667 | INFO     | api.routes:ask:44 - /ask | question: what is Embeddings?
+2026-04-10 14:21:51.667 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is Embeddings?'
+2026-04-10 14:21:58.135 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 524befe5
+  query         : what is Embeddings?
+  retrieval_time: 0.0s
+  llm_time      : 6.468s
+  total_time    : 6.468s
+  est. tokens   : 26
+2026-04-10 14:21:58.136 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is Embeddings?'
+2026-04-10 14:21:58.136 | INFO     | api.main:log_requests:31 - ← 200 | 6470.55ms
+2026-04-10 14:25:18.301 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 14:25:18.303 | INFO     | api.routes:ask:44 - /ask | question: what is AI Act?
+2026-04-10 14:25:18.303 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is AI Act?'
+2026-04-10 14:25:25.457 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : e15be324
+  query         : what is AI Act?
+  retrieval_time: 0.0s
+  llm_time      : 7.154s
+  total_time    : 7.154s
+  est. tokens   : 38
+2026-04-10 14:25:25.458 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is AI Act?'
+2026-04-10 14:25:25.458 | INFO     | api.main:log_requests:31 - ← 200 | 7157.19ms
+2026-04-10 15:01:16.067 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-10 15:01:16.068 | INFO     | api.main:log_requests:31 - ← 200 | 1.01ms
+2026-04-10 15:01:16.112 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-10 15:01:16.122 | INFO     | api.main:log_requests:31 - ← 200 | 10.01ms
+2026-04-10 15:01:29.742 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 15:01:29.745 | INFO     | api.routes:ask:44 - /ask | question: what is rag?
+2026-04-10 15:01:29.746 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is rag?'
+2026-04-10 15:01:39.823 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : ebd3cf21
+  query         : what is rag?
+  retrieval_time: 0.0s
+  llm_time      : 10.077s
+  total_time    : 10.077s
+  est. tokens   : 11
+2026-04-10 15:01:39.824 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is rag?'
+2026-04-10 15:01:39.825 | INFO     | api.main:log_requests:31 - ← 200 | 10082.18ms
+2026-04-10 15:01:51.890 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 15:01:51.892 | INFO     | api.routes:ask:44 - /ask | question: what is ai act?
+2026-04-10 15:01:51.892 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ai act?'
+2026-04-10 15:01:59.210 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 6a0f9251
+  query         : what is ai act?
+  retrieval_time: 0.0s
+  llm_time      : 7.318s
+  total_time    : 7.318s
+  est. tokens   : 43
+2026-04-10 15:01:59.210 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ai act?'
+2026-04-10 15:01:59.211 | INFO     | api.main:log_requests:31 - ← 200 | 7320.47ms
+2026-04-10 15:07:40.890 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 15:07:40.892 | INFO     | api.routes:ask:44 - /ask | question: what is ai?
+2026-04-10 15:07:40.893 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ai?'
+2026-04-10 15:07:50.721 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 34a100a1
+  query         : what is ai?
+  retrieval_time: 0.0s
+  llm_time      : 9.827s
+  total_time    : 9.827s
+  est. tokens   : 11
+2026-04-10 15:07:50.721 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ai?'
+2026-04-10 15:07:50.722 | INFO     | api.main:log_requests:31 - ← 200 | 9831.93ms
+2026-04-10 15:15:09.517 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 15:15:09.520 | INFO     | api.routes:ask:44 - /ask | question: what is ai?
+2026-04-10 15:15:09.521 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'what is ai?'
+2026-04-10 15:15:09.521 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 15:15:09.522 | INFO     | api.main:log_requests:31 - ← 200 | 5.09ms
+2026-04-10 15:15:17.794 | INFO     | api.main:log_requests:28 - → POST /api/v1/cache/clear
+2026-04-10 15:15:17.796 | INFO     | core.cache:clear_cache:20 - Cache cleared
+2026-04-10 15:15:17.796 | INFO     | api.main:log_requests:31 - ← 200 | 2.08ms
+2026-04-10 15:15:18.623 | INFO     | api.main:log_requests:28 - → POST /api/v1/cache/clear
+2026-04-10 15:15:18.623 | INFO     | core.cache:clear_cache:20 - Cache cleared
+2026-04-10 15:15:18.624 | INFO     | api.main:log_requests:31 - ← 200 | 1.07ms
+2026-04-10 15:15:22.934 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 15:15:22.935 | INFO     | api.routes:ask:44 - /ask | question: what is ai?
+2026-04-10 15:15:22.935 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is ai?'
+2026-04-10 15:15:33.206 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 9281d3f7
+  query         : what is ai?
+  retrieval_time: 0.0s
+  llm_time      : 10.271s
+  total_time    : 10.271s
+  est. tokens   : 32
+2026-04-10 15:15:33.206 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is ai?'
+2026-04-10 15:15:33.207 | INFO     | api.main:log_requests:31 - ← 200 | 10272.95ms
+2026-04-10 15:15:45.718 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 15:15:45.720 | INFO     | api.routes:ask:44 - /ask | question: what is faiss?
+2026-04-10 15:15:45.720 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is faiss?'
+2026-04-10 15:15:51.693 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 99e9f2c1
+  query         : what is faiss?
+  retrieval_time: 0.0s
+  llm_time      : 5.973s
+  total_time    : 5.973s
+  est. tokens   : 30
+2026-04-10 15:15:51.693 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is faiss?'
+2026-04-10 15:15:51.694 | INFO     | api.main:log_requests:31 - ← 200 | 5975.78ms
+2026-04-10 15:58:23.456 | INFO     | api.main:log_requests:28 - → POST /api/v1/debug-rag
+2026-04-10 15:58:23.458 | INFO     | api.routes:debug_rag:113 - /debug-rag | question: what is ai act?
+2026-04-10 15:58:35.954 | INFO     | api.routes:debug_rag:134 - /debug-rag | 3 chunks retrieved
+2026-04-10 15:58:35.956 | INFO     | api.main:log_requests:31 - ← 200 | 12499.35ms
+2026-04-10 16:04:08.846 | INFO     | api.main:log_requests:28 - → GET /docs
+2026-04-10 16:04:08.847 | INFO     | api.main:log_requests:31 - ← 200 | 0.99ms
+2026-04-10 16:04:08.877 | INFO     | api.main:log_requests:28 - → GET /openapi.json
+2026-04-10 16:04:08.888 | INFO     | api.main:log_requests:31 - ← 200 | 10.94ms
+2026-04-10 16:04:16.765 | INFO     | api.main:log_requests:28 - → POST /api/v1/cache/clear
+2026-04-10 16:04:16.768 | INFO     | core.cache:clear_cache:20 - Cache cleared
+2026-04-10 16:04:16.768 | INFO     | api.main:log_requests:31 - ← 200 | 3.07ms
+2026-04-10 16:04:37.924 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 16:04:37.925 | INFO     | api.routes:ask:44 - /ask | question: Chronological Events?
+2026-04-10 16:04:37.925 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'Chronological Events?'
+2026-04-10 16:04:54.402 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 638f8693
+  query         : Chronological Events?
+  retrieval_time: 0.0s
+  llm_time      : 16.477s
+  total_time    : 16.477s
+  est. tokens   : 164
+2026-04-10 16:04:54.403 | INFO     | core.cache:set_cache:16 - Cache SET for: 'Chronological Events?'
+2026-04-10 16:04:54.403 | INFO     | api.main:log_requests:31 - ← 200 | 16479.54ms
+2026-04-10 16:05:23.188 | INFO     | api.main:log_requests:28 - → POST /api/v1/chat
+2026-04-10 16:05:23.191 | INFO     | api.routes:chat:74 - /chat | session: 1 | message: what is transformer?
+2026-04-10 16:05:30.809 | INFO     | api.routes:chat:76 - /chat | session: 1 | response ready
+2026-04-10 16:05:30.809 | INFO     | api.main:log_requests:31 - ← 200 | 7621.68ms
+2026-04-10 16:06:08.014 | INFO     | api.main:log_requests:28 - → POST /api/v1/agent
+2026-04-10 16:06:08.017 | INFO     | api.routes:agent_ask:101 - /agent | question: what is self attention?
+2026-04-10 16:06:08.017 | INFO     | agents.agent:run_agent:87 - Agent received: what is self attention?
+2026-04-10 16:06:08.017 | INFO     | agents.agent:run_agent:114 - Agent picked: DocumentSearch
+2026-04-10 16:06:14.949 | INFO     | agents.agent:run_agent:117 - Agent result: According to the context, "Self-Attention" is a mechanism used in the Transformer architecture, which allows the model to weigh the importance of different words in a sentence simultaneously, regardless of their distance from each other.
+2026-04-10 16:06:14.950 | INFO     | api.main:log_requests:31 - ← 200 | 6935.35ms
+2026-04-10 16:07:47.813 | INFO     | api.main:log_requests:28 - → POST /api/v1/debug-rag
+2026-04-10 16:07:47.815 | INFO     | api.routes:debug_rag:113 - /debug-rag | question: faiss
+2026-04-10 16:07:55.088 | INFO     | api.routes:debug_rag:134 - /debug-rag | 3 chunks retrieved
+2026-04-10 16:07:55.089 | INFO     | api.main:log_requests:31 - ← 200 | 7275.44ms
+2026-04-10 17:56:20.789 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 17:56:20.791 | INFO     | api.routes:ask:44 - /ask | question: What is RAG?
+2026-04-10 17:56:20.791 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'What is RAG?'
+2026-04-10 17:56:31.683 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : a6af6fb5
+  query         : What is RAG?
+  retrieval_time: 0.0s
+  llm_time      : 10.892s
+  total_time    : 10.892s
+  est. tokens   : 14
+2026-04-10 17:56:31.684 | INFO     | core.cache:set_cache:16 - Cache SET for: 'What is RAG?'
+2026-04-10 17:56:31.685 | INFO     | api.main:log_requests:31 - ← 200 | 10895.37ms
+2026-04-10 17:56:58.772 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 17:56:58.773 | INFO     | api.routes:ask:44 - /ask | question: What is RAG?
+2026-04-10 17:56:58.773 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'What is RAG?'
+2026-04-10 17:56:58.773 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 17:56:58.773 | INFO     | api.main:log_requests:31 - ← 200 | 1.02ms
+2026-04-10 17:57:10.766 | INFO     | api.main:log_requests:28 - → POST /api/v1/ask
+2026-04-10 17:57:10.767 | INFO     | api.routes:ask:44 - /ask | question: What is RAG?
+2026-04-10 17:57:10.767 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'What is RAG?'
+2026-04-10 17:57:10.767 | INFO     | api.routes:ask:49 - /ask | returning cached answer
+2026-04-10 17:57:10.767 | INFO     | api.main:log_requests:31 - ← 200 | 0.87ms
+2026-04-10 18:28:05.848 | INFO     | api.main:log_requests:34 - → POST /api/v1/ask
+2026-04-10 18:28:05.850 | INFO     | api.main:log_requests:37 - ← 422 | 1.22ms
+2026-04-10 18:28:25.961 | INFO     | api.main:log_requests:34 - → POST /api/v1/ask
+2026-04-10 18:28:25.961 | INFO     | api.routes:ask:52 - /ask | question: What is RAG?
+2026-04-10 18:28:25.962 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'What is RAG?'
+2026-04-10 18:28:25.962 | INFO     | api.routes:ask:57 - /ask | returning cached answer
+2026-04-10 18:28:25.962 | INFO     | api.main:log_requests:37 - ← 200 | 1.77ms
+2026-04-10 18:28:37.020 | INFO     | api.main:log_requests:34 - → POST /api/v1/ask
+2026-04-10 18:28:37.021 | INFO     | api.main:log_requests:37 - ← 422 | 0.53ms
+2026-04-10 18:29:39.442 | INFO     | api.main:log_requests:34 - → POST /api/v1/ask
+2026-04-10 18:29:39.443 | INFO     | api.routes:ask:52 - /ask | question: What is RAG?
+2026-04-10 18:29:39.443 | INFO     | core.cache:get_cached:9 - Cache HIT for: 'What is RAG?'
+2026-04-10 18:29:39.443 | INFO     | api.routes:ask:57 - /ask | returning cached answer
+2026-04-10 18:29:39.443 | INFO     | api.main:log_requests:37 - ← 200 | 1.12ms
+2026-04-10 18:30:32.833 | INFO     | api.main:log_requests:34 - → GET /
+2026-04-10 18:30:32.834 | INFO     | api.main:log_requests:37 - ← 200 | 0.77ms
+2026-04-10 18:30:38.899 | INFO     | api.main:log_requests:34 - → GET /
+2026-04-10 18:30:38.899 | INFO     | api.main:log_requests:37 - ← 200 | 0.61ms
+2026-04-10 18:30:39.525 | INFO     | api.main:log_requests:34 - → GET /docs
+2026-04-10 18:30:39.526 | INFO     | api.main:log_requests:37 - ← 200 | 1.08ms
+2026-04-10 18:30:39.605 | INFO     | api.main:log_requests:34 - → GET /openapi.json
+2026-04-10 18:30:39.615 | INFO     | api.main:log_requests:37 - ← 200 | 9.54ms
+2026-04-10 18:32:53.143 | INFO     | api.main:log_requests:34 - → POST /api/v1/ask
+2026-04-10 18:32:53.146 | INFO     | api.main:log_requests:37 - ← 401 | 2.49ms
+2026-04-10 18:33:09.894 | INFO     | api.main:log_requests:34 - → POST /api/v1/ask
+2026-04-10 18:33:09.895 | INFO     | api.routes:ask:52 - /ask | question: what is rag?
+2026-04-10 18:33:09.895 | INFO     | core.cache:get_cached:11 - Cache MISS for: 'what is rag?'
+2026-04-10 18:33:22.144 | INFO     | core.monitoring:log_request:13 - 
+. REQUEST TRACE
+  request_id    : 93e2e7af
+  query         : what is rag?
+  retrieval_time: 0.0s
+  llm_time      : 12.248s
+  total_time    : 12.248s
+  est. tokens   : 40
+2026-04-10 18:33:22.145 | INFO     | core.cache:set_cache:16 - Cache SET for: 'what is rag?'
+2026-04-10 18:33:22.145 | INFO     | api.main:log_requests:37 - ← 200 | 12251.12ms

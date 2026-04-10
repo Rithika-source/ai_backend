@@ -1,0 +1,9 @@
+Artificial Intelligence is built upon neural networks, which are inspired
+by the biological structure of the human brain. A key component is the 
+"Transformer" architecture, introduced in the 2017 paper "Attention Is All 
+You Need." Unlike older Recurrent Neural Networks (RNNs), Transformers use a 
+"Self-Attention" mechanism. This allows the model to weigh the importance of 
+different words in a sentence simultaneously, regardless of their distance from
+ each other. This parallelism significantly improved training efficiency and led to the development 
+ of Large Language Models (LLMs) like GPT-4 and Claude.
+ 

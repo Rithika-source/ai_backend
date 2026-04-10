@@ -1,0 +1,7 @@
+Topic: Chronological Events
+1950: Alan Turing publishes "Computing Machinery and Intelligence," introducing the Turing Test.
+1956: The Dartmouth Workshop officially coins the term "Artificial Intelligence."
+1997: IBM's Deep Blue defeats world chess champion Garry Kasparov.
+2012: AlexNet wins the ImageNet competition, sparking the Deep Learning revolution.
+2022: OpenAI releases ChatGPT, bringing generative AI to the general public.
+2024: The European Union passes the AI Act, the world's first comprehensive AI regulation.
